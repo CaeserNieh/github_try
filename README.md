@@ -36,8 +36,15 @@ git rm file1.txt
 git commit -m "remove file1.txt"
 
 ```
-And to push changes to remote repo
+And push to change remote repo
 ```
+git push origin branch_name
+```
+
+But if you wanto to remove the file only from the Git repo and not remove it from fileSystem use 
+```
+git rm --cached file1.txt
+git commit -m "remove file1.txt"
 git push origin branch_name
 ```
 
